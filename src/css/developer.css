@@ -1,0 +1,2842 @@
+:root {
+    --background: #283466;
+    ;
+    --text-color: #FFF;
+    --background-header: #FFF;
+    --techno-active: rgb(204, 137, 14);
+    --techno: #2D5BD0;
+    --dev-team-card: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    color: var(--text-color);
+}
+
+.container_width {
+    width: 100%;
+    background-color: var(--background);
+}
+.main {
+    font-family: 'Playfair Display';    
+}
+
+/*======================================*/
+
+
+/* loader start */
+.hide {
+    opacity: 0;
+}
+
+#loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, #2d5bd0 0.1%, #091d4f 94.2%);
+    background-size: 100%;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+    z-index: 9999;
+    position: fixed;
+    transition: 15s;
+}
+
+.loading-container {
+    width: 100%;
+    max-width: 520px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    margin: 0 32px;
+}
+
+.loading-container:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    -webkit-animation: movingLine 2.4s infinite ease-in-out;
+    animation: movingLine 2.4s infinite ease-in-out;
+}
+
+#loader .loading-container .loading-text {
+    font-family: "Montserrat", sans-serif;
+}
+
+@-webkit-keyframes movingLine {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+
+    33.3%,
+    66% {
+        opacity: 0.8;
+        width: 100%;
+    }
+
+    85% {
+        width: 0;
+        left: initial;
+        right: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 0;
+    }
+}
+
+@keyframes movingLine {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+
+    33.3%,
+    66% {
+        opacity: 0.8;
+        width: 100%;
+    }
+
+    85% {
+        width: 0;
+        left: initial;
+        right: 0;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 0;
+    }
+}
+
+.loading-text {
+    font-size: 5vw;
+    line-height: 64px;
+    letter-spacing: 10px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loading-text span {
+    -webkit-animation: moveLetters 2.4s infinite ease-in-out;
+    animation: moveLetters 2.4s infinite ease-in-out;
+    transform: translatex(0);
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    text-shadow: 0px 2px 10px rgba(46, 74, 81, 0.3);
+}
+
+.loading-text span:nth-child(1) {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.loading-text span:nth-child(2) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.loading-text span:nth-child(3) {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.loading-text span:nth-child(4) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.loading-text span:nth-child(5) {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.loading-text span:nth-child(6) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.loading-text span:nth-child(7) {
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.loading-text span:nth-child(8) {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+@-webkit-keyframes moveLetters {
+    0% {
+        transform: translateX(-15vw);
+        opacity: 0;
+    }
+
+    33.3%,
+    66% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(15vw);
+        opacity: 0;
+    }
+}
+
+@keyframes moveLetters {
+    0% {
+        transform: translateX(-15vw);
+        opacity: 0;
+    }
+
+    33.3%,
+    66% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(15vw);
+        opacity: 0;
+    }
+}
+
+/* loader end */
+
+
+/*----------LOGO----------*/
+.dev_logo_ALL {
+    width: 100%;
+    background-color: var(--background-header);
+}
+
+.dev_logo_ALL-cont {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--background);
+    width: 320px;
+}
+
+.dev_logo_container {
+    height: 137px;
+    display: flex;
+}
+
+.dev_logo_container-l {
+    display: flex;
+    flex-direction: column;
+}
+
+.dev_logo_blok {
+    width: 161px;
+    height: 90px;
+    background-color: var(--background);
+}
+
+.m_logo_IT {
+    width: 27px;
+    height: 27px;
+    margin-top: 11px;
+    margin-left: 9px;
+    margin-right: 8px;
+}
+
+.m_logo_IT img {
+    width: 100%;
+    height: 100%;
+}
+
+.dev_logo_zag-1 {
+    display: flex;
+    margin-top: 9px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.dev_logo_zag-1 span {
+    width: 113px;
+    height: 48px;
+}
+
+.dev_logo_zag-2 {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.dev_anime-1 {
+    height: 47px;
+    width: 161px;
+    overflow: hidden;
+}
+
+.dev_anime-1 img {
+    width: 179px;
+    margin-left: -13px;
+    margin-top: -65px;
+}
+
+.dev_anime-2 {
+    height: 137px;
+    width: 159px;
+    overflow: hidden;
+}
+
+.dev_anime-2 img {
+    width: 170px;
+    margin-right: -11px;
+    margin-top: -16px;
+}
+
+/*----------IT----------*/
+.dev_IT_container {
+    display: block;
+    margin: 0 auto;
+    padding-top: 24px;
+    width: 320px;
+    height: 387px;
+}
+
+.dev_IT_zag {
+    display: block;
+    width: 301px;
+    height: 54px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    visibility: visible;
+    animation-delay: 0.2s;
+    animation-name: fadeIn;
+    color: rgb(225 150 13);
+}
+
+.dev_IT_container-text {
+    height: 273px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.dev_IT_blok1,
+.dev_IT_blok2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.dev_IT_container-text-1 {
+    display: flex;
+    flex-direction: row;
+    height: 63px;
+    margin-top: 12px;
+}
+
+.dev_IT_container-text-1 .dev_IT_cont-t-img :nth-child(1) {
+    visibility: visible;
+    animation-delay: 1.2s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-1 .dev_IT_cont-t-img :nth-child(2) {
+    visibility: visible;
+    animation-delay: 0.9s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-1 :nth-child(2) {
+    visibility: visible;
+    animation-delay: 0.5s;
+    animation-name: fadeInLeft;
+    color: var(--techno-active);
+}
+
+.dev_IT_container-text-2 {
+    display: flex;
+    flex-direction: row;
+    height: 84px;
+    margin-top: 12px;
+}
+
+.dev_IT_container-text-2 .dev_IT_cont-t-img :nth-child(1) {
+    visibility: visible;
+    animation-delay: 2.2s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-2 .dev_IT_cont-t-img :nth-child(2) {
+    visibility: visible;
+    animation-delay: 1.9s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-2 :nth-child(2) {
+    visibility: visible;
+    animation-delay: 1.5s;
+    animation-name: fadeInLeft;
+}
+
+.dev_IT_container-text-3 {
+    display: flex;
+    flex-direction: row;
+    height: 42px;
+    margin-top: 12px;
+}
+
+.dev_IT_container-text-3 .dev_IT_cont-t-img :nth-child(1) {
+    visibility: visible;
+    animation-delay: 3.2s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-3 .dev_IT_cont-t-img :nth-child(2) {
+    visibility: visible;
+    animation-delay: 2.9s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-3 :nth-child(2) {
+    visibility: visible;
+    animation-delay: 2.5s;
+    animation-name: fadeInLeft;
+    color: var(--techno-active);
+}
+
+.dev_IT_container-text-4 {
+    display: flex;
+    flex-direction: row;
+    height: 42px;
+    margin-top: 12px;
+}
+
+.dev_IT_container-text-4 .dev_IT_cont-t-img :nth-child(1) {
+    visibility: visible;
+    animation-delay: 4.2s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-4 .dev_IT_cont-t-img :nth-child(2) {
+    visibility: visible;
+    animation-delay: 3.9s;
+    animation-name: fadeIn;
+}
+
+.dev_IT_container-text-4 :nth-child(2) {
+    visibility: visible;
+    animation-delay: 3.5s;
+    animation-name: fadeInLeft;
+}
+
+.dev_IT_container>.dev_IT-320>.dev_IT_container-text>.dev_IT_blok2>.en_dev_IT_container-text-4 {
+    margin-top: 34px;
+}
+
+.dev_IT-320 {
+    display: block;
+}
+
+.dev_IT-1024 {
+    display: none;
+}
+
+.dev_IT_cont-t-img {
+    width: 70px;
+    margin-top: 5px;
+    padding-left: 23px;
+    box-sizing: border-box;
+}
+
+.dev_IT_cont-t-img1 {
+    position: absolute;
+    margin-top: -1px;
+    margin-left: -22px;
+}
+
+.dev_IT_cont-t-text {
+    width: 226px;
+}
+
+.dev_IT_container-text-2 div:nth-child(2) {
+    width: 210px;
+    color: var(--techno-active);
+}
+
+.dev_IT_container-text-4 div:nth-child(2) {
+    width: 177px;
+    color: var(--techno-active);
+}
+
+/*----------TEAM----------*/
+.dev_Team_container {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    height: 970px;
+}
+
+.dev_Team_zag {
+    display: block;
+    width: 170px;
+    height: 27px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.dev_Team_zag1 {
+    display: block;
+    width: 290px;
+    height: 42px;
+    margin: 10px auto 0 auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    font-style: italic;
+    text-align: center;
+}
+
+.dev_Team_zag1-img {
+    width: 75px;
+    margin-top: 1px;
+    margin-right: 19px;
+    float: right;
+}
+
+.dev_Team_zag1-img img {
+    width: 100%;
+}
+
+.dev_avtograf {
+    height: 45px;
+}
+
+.dev_Team_all {
+    margin-top: 5px;
+    height: 770px;
+}
+
+.dev_Team_320 {
+    display: flex;
+    flex-direction: column;
+}
+
+.dev_Team_1024 {
+    display: none;
+}
+
+.dev_Team_blok {
+    box-sizing: border-box;
+    height: 90px;
+    width: 274px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 18px auto 0 auto;
+    visibility: visible;
+    animation-delay: 0.3s;
+    animation-name: fadeInLeft;
+}
+
+.dev_Team-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.dev_Team-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.dev_Team-rec {
+    box-sizing: border-box;
+    width: 209px;
+    height: 80px;
+    margin-top: 5px;
+    margin-right: 90px;
+    background: var(--background);
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.dev_Team-name {
+    width: 120px;
+    height: 82px;
+    padding-left: 0px;
+    padding-top: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.dev_Team-name div {
+    width: 80px;
+}
+
+.dev_Team_button_all {
+    display: block;
+    margin: 0 auto;
+}
+
+.button_Team_dev {
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+/*----------MENTOR----------*/
+.dev_Mentor_container {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    height: 375px;
+}
+
+.dev_Mentor_zag {
+    display: block;
+    width: 90px;
+    height: 27px;
+    margin: 0 auto;
+    font-weight: 700;
+    margin-top: 79px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.dev_Mentor_All {
+    display: flex;
+    flex-direction: column;
+}
+
+.Mentor_320 {
+    display: flex;
+}
+
+.Mentor_1024 {
+    display: none;
+}
+
+.dev_Mentor_blok {
+    box-sizing: border-box;
+    height: 90px;
+    width: 274px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 18px auto 0 auto;
+    visibility: visible;
+    animation-delay: 0.3s;
+    animation-name: fadeInRight;
+}
+
+.dev_Mentor-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.dev_Mentor-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.dev_Mentor-rec {
+    box-sizing: border-box;
+    width: 209px;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 66px;
+    background: var(--techno);
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dev_Mentor-name {
+    width: 120px;
+    height: 82px;
+    padding-left: 36px;
+    padding-top: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.dev_link {
+    width: 26px;
+    height: 26px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.dev_Linkedin {
+    width: 100%;
+}
+
+/*----------TEHNO----------*/
+.dev_Texno {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    height: 180px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.dev_texno_circle {
+    margin: 30px auto 0 auto;
+    width: 254px;
+    height: 254px;
+    border-radius: 50%;
+    border: 2px solid #E6F4F4;
+}
+
+.dev_texno_anime {
+    width: 142px;
+    height: 100px;
+    margin: 51px auto 0 auto;
+}
+
+.dev_texno_anime img {
+    width: 100%;
+}
+
+.dev_tehno-all {
+    display: flex;
+}
+
+.dev_tehno_bl-all {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 5;
+    background: var(--techno);
+    transition: all 0.5s;
+}
+
+.dev_tehno_bl-all img,
+.dev_tehno_bl-all.-next img,
+.dev_tehno_bl-all.-prev img {
+    width: 60%;
+    z-index: 5;
+    opacity: 1;
+}
+
+.dev_tehno_bl-all.-active img {
+    width: 62%;
+    z-index: 5;
+    opacity: 1;
+}
+
+.dev_tehno_bl-all.-active {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    z-index: 5;
+    background: var(--techno-active);
+}
+
+.dev_tehno_bl-all.-prev,
+.dev_tehno_bl-all.-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 5;
+    background: var(--techno);
+}
+
+.dev_tehno_bl-all.-none {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.dev_tehno_bl-1 {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 130px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-2 {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 231px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-3 {
+    position: absolute;
+    margin-top: 121px;
+    margin-left: 265px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-4 {
+    margin-top: 200px;
+    margin-left: 250px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-5 {
+    margin-top: 255px;
+    margin-left: 190px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-6 {
+    margin-top: 255px;
+    margin-left: 95px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-7 {
+    margin-top: 200px;
+    margin-left: 30px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-8 {
+    position: absolute;
+    margin-top: 121px;
+    margin-left: 15px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_tehno_bl-9 {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 39px;
+    transition: all 0.5s;
+    z-index: 5;
+}
+
+.dev_texno_text-all {
+    width: 72px;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 88px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--text-color);
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dev_texno_text-all.-active {
+    margin-top: 33px;
+    margin-left: 88px;
+    transition: all 0.5s;
+    z-index: 3;
+    opacity: 1;
+    visibility: visible;
+}
+
+/*----------TEHNO ZAG----------*/
+.dev_tehno_zag {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    height: 71px;
+}
+
+.dev_tehno_zag-text {
+    margin: 18px auto 0 auto;
+    width: 230px;
+    height: 42px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.dev_button_all {
+    display: block;
+    margin: 0 auto;
+}
+
+.button-training-order {
+    transform: skew(12deg);
+    margin: auto;
+    font-weight: 700;
+    color: var(--background);
+
+}
+
+.get-offer {
+    width: 300px;
+    height: 55px;
+    background: var(--techno);
+    border-radius: 6px;
+    border: 0;
+    transform: skewX(-13deg);
+    padding: 16px;
+    color: var(--background);
+}
+
+.get-offer p {
+    transform: skewX(13deg);
+    font-size: 18px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    border: none;
+    background: transparent;
+    color: var(--background-header);
+}
+
+.get-offer:hover {
+    background: orange;
+}
+
+.get-offer:active {
+    background: orange;
+    border: 1px solid var(--background);
+    border-radius: 6px;
+}
+
+.get-offer:disabled {
+    background: #C6C6C6;
+    border-radius: 6px;
+    color: #787878;
+}
+
+.button_dev {
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.dev_tehno_zag-text-span {
+    display: none;
+}
+
+.up {
+    display: none;
+}
+
+.arrow {
+    width: 46px;
+    position: unset;
+    margin-right: 40px;
+}
+
+.fade-in-animation {
+    opacity: 1;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* --------*********************---------- */
+@media only screen and (min-width: 768px) {
+
+    /*----------LOGO----------*/
+    .dev_logo_ALL-cont {
+        width: 768px;
+    }
+
+    .dev_logo_container {
+        width: 768px;
+        height: 313px;
+    }
+
+    .dev_logo_blok {
+        width: 309px;
+        height: 187px;
+    }
+
+    .m_logo_IT {
+        width: 66px;
+        height: 66px;
+        margin-top: 6px;
+        margin-left: 16px;
+        margin-right: 8px;
+    }
+
+    .dev_logo_zag-1 {
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .dev_logo_zag-1 span {
+        width: 165px;
+        height: 88px;
+    }
+
+    .dev_logo_zag-2 {
+        margin-top: 24px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .dev_anime-1 {
+        height: 126px;
+        width: 309px;
+    }
+
+    .dev_anime-1 img {
+        width: 412px;
+        margin-left: -40px;
+        margin-top: -148px;
+    }
+
+    .dev_anime-2 {
+        height: 313px;
+        width: 459px;
+    }
+
+    .dev_anime-2 img {
+        width: 495px;
+        margin-right: -11px;
+        margin-top: -110px;
+    }
+
+    /*----------IT----------*/
+    .dev_IT_container {
+        padding-top: 36px;
+        width: 768px;
+        height: 346px;
+    }
+
+    .dev_IT_zag {
+        width: 481px;
+        height: 86px;
+        font-size: 32px;
+        line-height: 43px;
+    }
+
+    .dev_IT_container-text {
+        height: 164px;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .dev_IT_blok1,
+    .dev_IT_blok2 {
+        flex-direction: row;
+    }
+
+    .dev_IT_container-text-1 {
+        height: 81px;
+        margin-top: 24px;
+    }
+
+    .dev_IT_container-text-2 {
+        height: 81px;
+        margin-top: 24px;
+    }
+
+    .dev_IT_container-text-3 {
+        height: 54px;
+        margin-top: 29px;
+    }
+
+    .dev_IT_container-text-4 {
+        height: 27px;
+        margin-top: 29px;
+    }
+
+    .dev_IT-320 {
+        display: none;
+    }
+
+    .dev_IT-1024 {
+        display: block;
+    }
+
+    .dev_IT_cont-t-img {
+        width: 82px;
+        margin-top: 5px;
+        padding-left: 35px;
+    }
+
+    .dev_IT_cont-t-text {
+        width: 265px;
+    }
+
+    .dev_IT_container-text-2 div:nth-child(2) {
+        width: 325px;
+    }
+
+    .dev_IT_container-text-4 div:nth-child(2) {
+        width: 317px;
+    }
+
+    .dev_IT_container-text-2 div:nth-child(1),
+    .dev_IT_container-text-4 div:nth-child(1) {
+        width: 83px;
+        padding-left: 36px;
+    }
+
+    /*----------TEAM----------*/
+    .dev_Team_container {
+        width: 768px;
+        height: 850px;
+    }
+
+    .dev_Team_zag {
+        width: 286px;
+        height: 53px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .dev_Team_zag1 {
+        width: 700px;
+        height: 27px;
+        margin: 16px auto 0 auto;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .dev_avtograf {
+        height: 64px;
+    }
+
+    .dev_Team_zag1-img {
+        width: 107px;
+        margin-right: 64px;
+    }
+
+    .dev_Team_all {
+        margin-top: 5px;
+        height: 580px;
+    }
+
+    .dev_Team_320 {
+        display: none;
+    }
+
+    .dev_Team_1024 {
+        display: flex;
+    }
+
+    .dev_circle-text {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--text-color);
+    }
+
+    .dev_circle-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+    }
+
+    .dev-1 {
+        margin-top: 25px;
+        margin-left: 45px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../img/developers/time/Alona_Pidhaiets.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-12 {
+        margin-top: 0px;
+        margin-left: 290px;
+        background-color: var(--techno);
+        opacity: 0.3;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .dev-2 {
+        margin-top: 15px;
+        margin-left: 469px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../img/developers/time/OlegShcherbak.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-3 {
+        margin-top: 191px;
+        margin-left: 224px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../img/developers/time/Ihor_Oleksandrenko.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-4 {
+        margin-top: 386px;
+        margin-left: 238px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../img/developers/time/AnastasiaTyshchenko.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-10 {
+        margin-top: 246px;
+        margin-left: 58px;
+        background-color: var(--techno);
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+
+    .dev-11 {
+        margin-top: 246px;
+        margin-left: 398px;
+        background-color: var(--techno);
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    .dev-6 {
+        margin-top: 424px;
+        margin-left: 44px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../img/developers/time/OlhaTymchyshyna.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-7 {
+        margin-top: 223px;
+        margin-left: 569px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../img/developers/time/LiliiaSharhorodska.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-9 {
+        margin-top: 406px;
+        margin-left: 566px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../img/developers/time/BartashOksana.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-9.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        cursor: auto;
+        margin-top: 386px;
+        margin-left: 546px;
+        border: 2px solid #ffff;
+    }
+
+    .dev-1.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        cursor: auto;
+        margin-top: 15px;
+        margin-left: 35px;
+        border: 2px solid #ffff;
+    }
+
+    .dev-2.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 5px;
+        margin-left: 459px;
+        border: 2px solid #ffff;
+    }
+
+    .dev-3.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 171px;
+        margin-left: 202px;
+        border: 2px solid #ffff;
+    }
+
+    .dev-4.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 396px;
+        margin-left: 208px;
+        border: 2px solid #ffff;
+    }
+
+    .dev-6.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 434px;
+        margin-left: 44px;
+        border: 2px solid #ffff;
+    }
+
+    .dev-7.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 203px;
+        margin-left: 549px;
+        border: 2px solid #ffff;
+    }
+
+
+    .dev-12.-active {
+        width: 160px;
+        height: 160px;
+        margin-top: -10px;
+        margin-left: 270px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        font-size: 23px;
+        opacity: 1 !important;
+        cursor: pointer;
+        border: 2px solid #ffff;
+    }
+
+    .dev-10.-active {
+        width: 160px;
+        height: 160px;
+        margin-top: 246px;
+        margin-left: 48px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        font-size: 23px;
+        opacity: 1 !important;
+        cursor: pointer;
+        border: 2px solid #ffff;
+    }
+
+    .dev-11.-active {
+        width: 160px;
+        height: 160px;
+        margin-top: 246px;
+        margin-left: 388px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        font-size: 23px;
+        opacity: 1 !important;
+        cursor: pointer;
+        border: 2px solid #ffff;
+    }
+
+    .dev_link-1024 {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        margin-right: -90px;
+        margin-top: 100px;
+        cursor: pointer;
+    }
+
+    .dev_link-1024 img {
+        width: 35px;
+        border: 1px var(--text-color) solid;
+        border-radius: 50%;
+    }
+
+    .dev_link-1024-1 {
+        display: none;
+    }
+
+    .dev_Team-rec {
+        box-sizing: border-box;
+        width: 100px;
+        height: 50px;
+        border: 2px solid #ffff;
+        background: var(--background);
+        border-radius: 50%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .dev_Team-rec-1 {
+        margin-top: 130px;
+        margin-right: 0px;
+        margin-left: 70px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-1.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 190px;
+        margin-left: 120px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-2 {
+        margin-top: 100px;
+        margin-right: 0px;
+        margin-left: 595px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-2.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 155px;
+        margin-left: 475px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-3 {
+        margin-top: 240px;
+        margin-right: 0px;
+        margin-left: 250px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-3.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 315px;
+        margin-left: 295px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-4 {
+        margin-top: 470px;
+        margin-right: 0px;
+        margin-left: 313px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-4.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 320px;
+        margin-left: 140px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-5 {
+        margin-top: 108px;
+        margin-right: 0px;
+        margin-left: 400px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+
+    .dev_Team-rec-6 {
+        margin-top: 505px;
+        margin-right: 0px;
+        margin-left: 120px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-6.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 350px;
+        margin-left: 195px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-7 {
+        margin-top: 305px;
+        margin-right: 0px;
+        margin-left: 595px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-7.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 155px;
+        margin-left: 415px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-8 {
+        margin-top: 490px;
+        margin-right: 0px;
+        margin-left: 530px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+
+    .dev_Team-rec-9 {
+        margin-top: 406px;
+        margin-left: 566px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-9.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 340px;
+        margin-left: 400px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-name {
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        width: 135px;
+        height: 95px;
+        padding-left: 0px;
+        padding-top: 15px;
+    }
+
+    .dev_Team-name div {
+        width: 110px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0 auto;
+    }
+
+    .dev_link1 {
+        width: 30px;
+        height: 30px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    /*----------MENTOR----------*/
+    .dev_Mentor_container {
+        width: 768px;
+        height: 444px;
+    }
+
+    .dev_Mentor_zag {
+        width: 179px;
+        height: 53px;
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    .dev_Mentor_All {
+        flex-direction: row;
+    }
+
+    .Mentor_320 {
+        display: none;
+    }
+
+    .Mentor_1024 {
+        display: flex;
+    }
+
+    .dev_Mentor_blok {
+        height: 332px;
+        width: 200px;
+        ;
+    }
+
+    .dev_Mentor-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .dev_Mentor-rec {
+        width: 200px;
+        height: 230px;
+        margin-top: 102px;
+        margin-left: 0px;
+        border-radius: 0px 0px 20px 20px;
+        flex-direction: column;
+    }
+
+    .dev_Mentor-name {
+        width: 105px;
+        height: 54px;
+        padding-left: 0px;
+        padding-top: 110px;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    }
+
+    .dev_link {
+        width: 30px;
+        height: 30px;
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+
+    /*----------TEHNO----------*/
+    .dev_Texno {
+        width: 768px;
+        height: 311px;
+    }
+
+    .dev_texno_circle {
+        margin: 39px auto 0 auto;
+        width: 499px;
+        height: 499px;
+    }
+
+    .dev_texno_anime {
+        width: 190px;
+        height: 134px;
+        margin: 138px auto 0 auto;
+    }
+
+    .dev_tehno_bl-all {
+        width: 60px;
+        height: 60px;
+    }
+
+    .dev_tehno_bl-all.-active {
+
+        height: 100px;
+        width: 100px;
+    }
+
+    .dev_tehno_bl-all.-prev,
+    .dev_tehno_bl-all.-next {
+        width: 80px;
+        height: 80px;
+    }
+
+    .dev_tehno_bl-1 {
+        margin-top: 0px;
+        margin-left: 334px;
+    }
+
+    .dev_tehno_bl-2 {
+        margin-top: 98px;
+        margin-left: 538px;
+    }
+
+    .dev_tehno_bl-3 {
+        margin-top: 215px;
+        margin-left: 601px;
+    }
+
+    .dev_tehno_bl-4 {
+        margin-top: 360px;
+        margin-left: 582px;
+    }
+
+    .dev_tehno_bl-5 {
+        margin-top: 440px;
+        margin-left: 472px;
+    }
+
+    .dev_tehno_bl-6 {
+        margin-top: 440px;
+        margin-left: 232x;
+    }
+
+    .dev_tehno_bl-7 {
+        margin-top: 360px;
+        margin-left: 132px
+    }
+
+    .dev_tehno_bl-8 {
+        margin-top: 215px;
+        margin-left: 108px;
+    }
+
+    .dev_tehno_bl-9 {
+        margin-top: 98px;
+        margin-left: 151px;
+    }
+
+    .dev_texno_text-all {
+        width: 116px;
+        margin-top: 27px;
+        margin-left: 191px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .dev_texno_text-all.-active {
+        margin-top: 67px;
+        margin-left: 191px;
+    }
+
+    /*----------TEHNO ZAG----------*/
+    .dev_tehno_zag {
+        width: 768px;
+        height: 103px;
+    }
+
+    .dev_tehno_zag-text {
+        margin: 17px auto 0 auto;
+        width: 621px;
+        height: 86px;
+        font-size: 32px;
+        line-height: 43px;
+    }
+
+    .dev_tehno_zag-text-span {
+        display: contents;
+    }
+
+    .dev_button_all {
+        overflow: hidden;
+        padding-top: 15px;
+    }
+
+    .up {
+        display: block;
+        width: 32px;
+        height: 44px;
+        position: relative;
+        bottom: 57px;
+        right: 31px;
+        float: right;
+        cursor: pointer;
+    }
+
+    .up-img {
+        width: 32px;
+        height: 44px;
+    }
+}
+
+
+/* --------****************************************************---------- */
+@media only screen and (min-width: 1024px) {
+
+    /*----------LOGO----------*/
+    .dev_logo_ALL {
+        width: 100%;
+    }
+
+    .dev_logo_ALL-cont {
+        width: 1024px;
+    }
+
+    .dev_logo_container {
+        width: 1024px;
+        height: 313px;
+        display: flex;
+    }
+
+    .dev_logo_container-l {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dev_logo_blok {
+        width: 437px;
+        height: 187px;
+    }
+
+    .m_logo_IT {
+        width: 66px;
+        height: 66px;
+        margin-top: 15px;
+        margin-left: 68px;
+        margin-right: 20px;
+    }
+
+    .m_logo_IT img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .dev_logo_zag-1 {
+        display: flex;
+        margin-top: 18px;
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .dev_logo_zag-1 span {
+        width: 220px;
+        height: 96px;
+    }
+
+    .dev_logo_zag-2 {
+        margin-top: 24px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .dev_anime-1 {
+        height: 126px;
+        width: 437px;
+        overflow: hidden;
+    }
+
+    .dev_anime-1 img {
+        width: 540px;
+        margin-left: -28px;
+        margin-top: -205px;
+    }
+
+    .dev_anime-2 {
+        height: 313px;
+        width: 587px;
+        overflow: hidden;
+    }
+
+    .dev_anime-2 img {
+        width: 623px;
+        margin-right: -11px;
+        margin-top: -200px;
+    }
+
+    /*----------IT----------*/
+    .dev_IT_container {
+        padding-top: 36px;
+        width: 1024px;
+        height: 346px;
+    }
+
+    .dev_IT_zag {
+        display: block;
+        width: 481px;
+        height: 86px;
+        font-size: 32px;
+        line-height: 43px;
+        visibility: visible;
+        animation-delay: 0.2s;
+        animation-name: fadeIn;
+        color: rgb(204, 137, 14);
+    }
+
+    .dev_IT_container-text {
+        height: 164px;
+        font-size: 20px;
+        line-height: 27px;
+        color: rgb(204, 137, 14);
+    }
+
+    .dev_IT_blok1,
+    .dev_IT_blok2 {
+        flex-direction: row;
+    }
+
+    .dev_IT_container-text-1 {
+        height: 81px;
+        margin-top: 24px;
+    }
+
+    .dev_IT_container-text-1 .dev_IT_cont-t-img :nth-child(1) {
+        visibility: visible;
+        animation-delay: 1.2s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-1 .dev_IT_cont-t-img :nth-child(2) {
+        visibility: visible;
+        animation-delay: 0.9s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-1 :nth-child(2) {
+        visibility: visible;
+        animation-delay: 0.5s;
+        animation-name: fadeInLeft;
+        color: rgb(204, 137, 14);
+    }
+
+    .dev_IT_container-text-2 {
+        height: 81px;
+        margin-top: 24px;
+    }
+
+    .dev_IT_container-text-2 .dev_IT_cont-t-img :nth-child(1) {
+        visibility: visible;
+        animation-delay: 3.2s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-2 .dev_IT_cont-t-img :nth-child(2) {
+        visibility: visible;
+        animation-delay: 2.9s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-2 :nth-child(2) {
+        visibility: visible;
+        animation-delay: 2.5s;
+        animation-name: fadeInLeft;
+    }
+
+    .dev_IT_container-text-3 {
+        height: 54px;
+        margin-top: 29px;
+    }
+
+    .dev_IT_container-text-3 .dev_IT_cont-t-img :nth-child(1) {
+        visibility: visible;
+        animation-delay: 2.2s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-3 .dev_IT_cont-t-img :nth-child(2) {
+        visibility: visible;
+        animation-delay: 1.9s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-3 :nth-child(2) {
+        visibility: visible;
+        animation-delay: 1.5s;
+        animation-name: fadeInLeft;
+        color: rgb(204, 137, 14);
+    }
+
+    .dev_IT_container-text-4 {
+        height: 27px;
+        margin-top: 29px;
+    }
+
+    .dev_IT_container-text-4 .dev_IT_cont-t-img :nth-child(1) {
+        visibility: visible;
+        animation-delay: 4.2s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-4 .dev_IT_cont-t-img :nth-child(2) {
+        visibility: visible;
+        animation-delay: 3.9s;
+        animation-name: fadeIn;
+    }
+
+    .dev_IT_container-text-4 :nth-child(2) {
+        visibility: visible;
+        animation-delay: 3.5s;
+        animation-name: fadeInLeft;
+    }
+
+    .dev_IT-320 {
+        display: none;
+    }
+
+    .dev_IT-1024 {
+        display: block;
+    }
+
+    .dev_IT_cont-t-img {
+        width: 128px;
+        margin-top: 5px;
+        padding-left: 81px;
+    }
+
+    .dev_IT_cont-t-text {
+        width: 282px;
+    }
+
+    .dev_IT_container-text-2 div:nth-child(2) {
+        width: 330px;
+        color: rgb(204, 137, 14);
+    }
+
+    .dev_IT_container-text-4 div:nth-child(2) {
+        width: 317px;
+        color: rgb(204, 137, 14);
+    }
+
+    .dev_IT_container-text-2 div:nth-child(1),
+    .dev_IT_container-text-4 div:nth-child(1) {
+        width: 113px;
+        padding-left: 66px;
+    }
+
+    /*----------TEAM----------*/
+    .dev_Team_container {
+        width: 1024px;
+        height: 864px;
+    }
+
+    .dev_Team_zag {
+        display: block;
+        width: 400px;
+        height: 53px;
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    .dev_Team_zag1 {
+        width: 850px;
+        height: 32px;
+        margin: 24px auto 0 auto;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .dev_Team_zag1-img {
+        width: 107px;
+        margin-right: 113px;
+    }
+
+    .dev_Team_all {
+        margin-top: 5px;
+        height: 624px;
+    }
+
+    .dev_Team_320 {
+        display: none;
+    }
+
+    .dev_Team_1024 {
+        display: flex;
+    }
+
+    .dev_circle-text {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--text-color);
+        visibility: visible;
+        animation-delay: 0.3s;
+        animation-name: fadeInUp;
+    }
+
+    .dev_circle-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        visibility: visible;
+        animation-delay: 0.3s;
+        animation-name: fadeInUp;
+    }
+
+    .dev-1 {
+        margin-top: 48px;
+        margin-left: 78px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../img/developers/time/Alona_Pidhaiets.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-12 {
+        margin-top: 0px;
+        margin-left: 445px;
+        background-color: var(--techno);
+        border: 2px solid #ffff;
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    .dev-2 {
+        margin-top: 0px;
+        margin-left: 653px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../img/developers/time/OlegShcherbak.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-4 {
+        margin-top: 180px;
+        margin-left: 850px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../img/developers/time/AnastasiaTyshchenko.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-10 {
+        margin-top: 264px;
+        margin-left: 101px;
+        background-color: var(--techno);
+        border: 2px solid #ffff;
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    .dev-3 {
+        margin-top: 200px;
+        margin-left: 375px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../img/developers/time/Ihor_Oleksandrenko.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-11 {
+        margin-top: 220px;
+        margin-left: 630px;
+        background-color: var(--techno);
+        border: 2px solid #ffff;
+        opacity: 0.3;
+        cursor: pointer;
+    }
+
+    .dev-6 {
+        margin-top: 440px;
+        margin-left: 90px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../img/developers/time/OlhaTymchyshyna.png);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-7 {
+        margin-top: 440px;
+        margin-left: 450px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../img/developers/time/LiliiaSharhorodska.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-9 {
+        margin-top: 440px;
+        margin-left: 760px;
+        opacity: 0.5;
+        cursor: pointer;
+        background-image: url(../img/developers/time/BartashOksana.jpg);
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .dev-1.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        cursor: auto;
+        margin-top: 28px;
+        margin-left: 58px;
+        border: 3px solid #ffff;
+    }
+
+    .dev-2.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: -20px;
+        margin-left: 625px;
+        border: 3px solid #ffff;
+    }
+
+    .dev-3.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 220px;
+        margin-left: 350px;
+        border: 3px solid #ffff;
+    }
+
+    .dev-4.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 140px;
+        margin-left: 800px;
+        border: 3px solid #ffff;
+    }
+
+    .dev-5.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 178px;
+        margin-left: 282px;
+        border: 3px solid #ffff;
+    }
+
+    .dev-6.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 460px;
+        margin-left: 102px;
+        border: 3px solid #ffff;
+    }
+
+    .dev-7.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 420px;
+        margin-left: 450px;
+        border: 3px solid #ffff;
+    }
+
+    .dev-8.-active {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        opacity: 1 !important;
+        margin-top: 236px;
+        margin-left: 701px;
+        border: 3px solid #ffff;
+    }
+
+    .dev-9.-active {
+        width: 160px;
+        height: 160px;
+        margin-top: 430px;
+        margin-left: 760px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        font-size: 23px;
+        opacity: 1 !important;
+        cursor: pointer;
+        border: 3px solid #ffff;
+    }
+
+    .dev-10.-active {
+        width: 160px;
+        height: 160px;
+        margin-top: 244px;
+        margin-left: 81px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        font-size: 23px;
+        opacity: 1 !important;
+        cursor: pointer;
+        border: 3px solid #ffff;
+    }
+
+    .dev-11.-active {
+        width: 160px;
+        height: 160px;
+        margin-top: 200px;
+        margin-left: 600px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        font-size: 23px;
+        opacity: 1 !important;
+        cursor: pointer;
+        border: 3px solid #ffff;
+    }
+
+    .dev-12.-active {
+        width: 160px;
+        height: 160px;
+        margin-top: -20px;
+        margin-left: 450px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        font-size: 23px;
+        opacity: 1 !important;
+        cursor: pointer;
+        border: 3px solid #ffff;
+    }
+
+    .dev_link-1024 {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        margin-right: -90px;
+        margin-top: 100px;
+        cursor: pointer;
+    }
+
+    .dev_link-1024 img {
+        width: 35px;
+        border: 1px #ffff solid;
+        border-radius: 50%;
+    }
+
+    .dev_link-1024-1 {
+        display: none;
+    }
+
+    .dev_Team-rec {
+        box-sizing: border-box;
+        width: 100px;
+        height: 50px;
+        border: 2px solid #ffff;
+        background: var(--background);
+        border-radius: 50%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .dev_Team-rec-1 {
+        margin-top: 100px;
+        margin-right: 0px;
+        margin-left: 105px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-1.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 190px;
+        margin-left: 120px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-2 {
+        margin-top: 10px;
+        margin-left: 650px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-2.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 85px;
+        margin-left: 500px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-3 {
+        margin-top: 320px;
+        margin-left: 314px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-3.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 355px;
+        margin-left: 270px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-4 {
+        margin-top: 150px;
+        margin-left: 900px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-4.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 10px;
+        margin-left: 806px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-5 {
+        margin-top: 178px;
+        margin-left: 282px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-5.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 260px;
+        margin-left: 430px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-6 {
+        margin-top: 400px;
+        margin-left: 102px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-6.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 340px;
+        margin-left: 165px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-7 {
+        margin-top: 420px;
+        margin-left: 450px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-7.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 320px;
+        margin-left: 420px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-8 {
+        margin-top: 236px;
+        margin-left: 701px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-8.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 300px;
+        margin-left: 535px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-9 {
+        margin-top: 460px;
+        margin-left: 760px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-rec-9.-active {
+        width: 190px;
+        height: 145px;
+        margin-top: 350px;
+        margin-left: 830px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+        transition: all 0.5s;
+    }
+
+    .dev_Team-name {
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        width: 135px;
+        height: 122px;
+        padding-left: 0px;
+        padding-top: 22px;
+    }
+
+    .dev_Team-name div {
+        width: 110px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 auto;
+    }
+
+    /*----------MENTOR----------*/
+    .dev_Mentor_container {
+        width: 1024px;
+        height: 444px;
+    }
+
+    .dev_Mentor_zag {
+        width: 179px;
+        height: 53px;
+        font-size: 40px;
+        line-height: 53px;
+    }
+
+    .dev_Mentor_All {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Mentor_320 {
+        display: none;
+    }
+
+    .Mentor_1024 {
+        display: flex;
+    }
+
+    .dev_Mentor_blok {
+        box-sizing: border-box;
+        height: 332px;
+        width: 200px;
+        display: flex;
+        flex-direction: col;
+        justify-content: flex-start;
+        margin: 18px auto 0 auto;
+    }
+
+    .dev_Mentor-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .dev_Mentor-rec {
+        width: 200px;
+        height: 230px;
+        margin-top: 102px;
+        margin-left: 0px;
+        border-radius: 0px 0px 20px 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dev_Mentor-name {
+        width: 105px;
+        height: 54px;
+        padding-left: 0px;
+        padding-top: 110px;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    }
+
+    .dev_link {
+        width: 30px;
+        height: 30px;
+        margin-right: 0px;
+        cursor: pointer;
+        margin-bottom: 24px;
+    }
+
+    /*----------TEHNO----------*/
+    .dev_Texno {
+        width: 1024px;
+        height: 311px;
+    }
+
+    .dev_texno_circle {
+        margin: 39px auto 0 auto;
+        width: 499px;
+        height: 499px;
+    }
+
+    .dev_texno_anime {
+        width: 190px;
+        height: 134px;
+        margin: 138px auto 0 auto;
+    }
+
+    .dev_tehno_bl-all {
+        width: 60px;
+        height: 60px;
+    }
+
+    .dev_tehno_bl-all.-active {
+
+        height: 100px;
+        width: 100px;
+    }
+
+    .dev_tehno_bl-all.-prev,
+    .dev_tehno_bl-all.-next {
+        width: 80px;
+        height: 80px;
+    }
+
+    .dev_tehno_bl-1 {
+        margin-top: 0px;
+        margin-left: 462px;
+    }
+
+    .dev_tehno_bl-2 {
+        margin-top: 98px;
+        margin-left: 666px;
+    }
+
+    .dev_tehno_bl-3 {
+        margin-top: 215px;
+        margin-left: 729px;
+    }
+
+    .dev_tehno_bl-4 {
+        margin-top: 360px;
+        margin-left: 710px;
+    }
+
+    .dev_tehno_bl-5 {
+        margin-top: 440px;
+        margin-left: 600px;
+    }
+
+    .dev_tehno_bl-6 {
+        margin-top: 440px;
+        margin-left: 360px;
+    }
+
+    .dev_tehno_bl-7 {
+        margin-top: 360px;
+        margin-left: 260px
+    }
+
+    .dev_tehno_bl-8 {
+        margin-top: 215px;
+        margin-left: 236px;
+    }
+
+    .dev_tehno_bl-9 {
+        margin-top: 98px;
+        margin-left: 279px;
+    }
+
+    .dev_texno_text-all {
+        width: 116px;
+        margin-top: 27px;
+        margin-left: 191px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .dev_texno_text-all.-active {
+        margin-top: 67px;
+        margin-left: 191px;
+    }
+
+    /*----------TEHNO ZAG----------*/
+    .dev_tehno_zag {
+        display: block;
+        margin: 0 auto;
+        width: 1024px;
+        height: 93px;
+    }
+
+    .dev_tehno_zag-text {
+        margin: 17px auto 0 auto;
+        width: 621px;
+        height: 86px;
+        font-size: 32px;
+        line-height: 43px;
+    }
+
+    .dev_tehno_zag-text-span {
+        display: contents;
+    }
+
+    .dev_button_all {
+        display: block;
+        margin: 0 auto;
+        padding-top: 25px;
+        overflow: hidden;
+    }
+
+    .up {
+        display: block;
+        width: 46px;
+        height: 60px;
+        position: relative;
+        bottom: 60px;
+        right: 24px;
+        float: right;
+        cursor: pointer;
+    }
+
+    .up-img {
+        width: 46px;
+        height: 60px;
+    }
+}

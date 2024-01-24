@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--DV_11 - Meta Date START-->
+    <meta name="author" content="Доброго вечора - Ми з України">
+    <meta name="title" content="Програма підтримки українців">
+    <meta name="description"
+        content="Програма підтримки українців, які постраждали від наслідків війни Росії проти України та українського народу.">
+    <meta name="keywords" content="Підтримка українців, програма підтримки, війна, біженці">
+    <meta property="og:title" content="Програма підтримки українців">
+    <meta property="og:description"
+        content="Програма підтримки українців, які постраждали від наслідків війни Росії проти України та українського народу.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dobrogodark.intita.com">
+    <!--DV_11 - Meta Date END-->
+
+    <title>Dobrogo_vechora_dark</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./src/img/favicon/favicon32x32.jpg" sizes="32x32">
+    <link rel="icon" type="image/png" href="./src/img/favicon/favicon16x16.jpg" sizes="16x16">
+
+    <!-- Підключення стилів Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/icomoon.css">
+</head>
+
+<body>
+    <!-- loader start -->
+    <div id="loader">
+        <div class="loading-container">
+            <div class="loading-text">
+                <span>I</span>
+                <span>N</span>
+                <span>T</span>
+                <span>I</span>
+                <span>T</span>
+                <span>A</span>
+                <span>/</span>
+                <span>></span>
+            </div>
+        </div>
+    </div>
+    <!-- loader end -->
+
+    <div id="wrapper">
+        <!--header start-->
+        <header id="header">
+            <nav class="navbar fixed-top navbar-expand-md ms-auto" data-bs-theme="light">
+                <div class="container">
+                    <div class="navbar-logo">
+                        <a class="navbar-brand" href="https://intita.com" target="_blank">
+                            <svg width="67" height="23" viewBox="0 0 255 80" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M103.246 0H148.493C151.392 0 153.913 2.36025 153.913 5.34162V74.6584C153.913 77.6396 151.392 80 148.493 80H103.246C100.347 80 97.8261 77.6396 97.8261 74.6584V5.34162C97.8261 2.36025 100.347 0 103.246 0Z"
+                                    fill="#4B75A4" />
+                                <path d="M5.86957 18.2109V66.9914H0V18.2109H5.86957Z" fill="rgb(254, 254, 254)" />
+                                <path
+                                    d="M53.4783 18.2109V66.9914H42.8832L23.3528 24.9307C24.5018 38.8678 24.1187 53.0543 24.1187 66.9914H17.6087V18.2109H27.9482L47.6062 60.3959C46.3299 46.7078 46.968 31.8995 46.968 18.2109H53.4783Z"
+                                    fill="rgb(254, 254, 254)" />
+                                <path
+                                    d="M91.9565 18.2109L90.712 23.4373H78.0168V66.9914H72.4163V23.4373H59.3478L60.3436 18.2109H91.9565Z"
+                                    fill="rgb(254, 254, 254)" />
+                                <path d="M111.522 66.9914V18.2109H105V66.9914H111.522Z" fill="#FEFEFE" />
+                                <path
+                                    d="M150.652 18.2109L149.509 23.4373H136.426V66.9914H130.076V23.4373H116.739L117.882 18.2109H150.652Z"
+                                    fill="#FEFEFE" />
+                                <path
+                                    d="M171.69 44.8411H184.02C182.636 39.8633 180.875 33.7658 177.855 23.313C175.087 33.0192 173.325 39.2415 171.69 44.8411ZM185.656 50.5654H170.18V50.3164C168.796 55.0453 167.412 60.0227 165.399 66.9914H158.479L173.325 18.2109H182.762L197.609 66.9914H190.311C188.172 59.5251 186.914 54.9206 185.656 50.5654Z"
+                                    fill="rgb(254, 254, 254)" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M223.696 17.5605H217.947L198.913 66.9914H204.789L223.696 17.5605Z"
+                                    fill="#4B75A4" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M226.304 59.9077L250.217 44.2467L226.304 26.5973V19.5127L255 41.6368V47.4786L226.304 66.9924V59.9077Z"
+                                    fill="#4B75A4" />
+                            </svg>
+                        </a>
+                        <hr class="separation">
+                        <a class="navbar-brand p-0" href="https://robotamolodi.org" target="_blank">
+                            <img class="youth-work" src="./src/img/footer/youth_work.png" alt="youth work logo">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon top-bar"></span>
+                        <span class="toggler-icon middle-bar"></span>
+                        <span class="toggler-icon bottom-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" id="link1" aria-current="page" href="#stop_children">Partners</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="link2" href="#specializations">Specializations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="link3" href="#footer">Contacts</a>
+                            </li>
+                        </ul>
+                        <div class="changed-language">
+                            <select class="language col-xl-0 offset-md-0" name="language" id="language">
+                                <option class="language-text" value="ua" id="ukrainian">UA</option>
+                                <option class="language-text" value="en" id="english" selected>EN</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--header end-->
+
+        <!--Block_main start good_evening,we_are_from_Ukraine-->
+        <section id="good_evening">
+            <div class="block">
+                <div class="internal">
+                    <div class="block_title">
+                        <h1 class="h1">GOOD EVENING - WE ARE FROM UKRAINE</h1>
+                    </div>
+                    <div class="block_title1">
+
+                        <p class="paragraf">The support program for Ukrainians affected by the consequences
+                            of Russia's war against Ukraine and the Ukrainian people.</p>
+                    </div>
+                    <div class="block_title1">
+                        <button class="button" type="button" data-bs-target="#registerModalToggle"
+                            data-bs-toggle="modal">Sign up</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="registerModalToggle" aria-hidden="true"
+                aria-labelledby="registerModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog register-wrapper">
+                    <form class="registration-form needs-validation" method="post" accept-charset="utf-8"
+                        action="https://intita.com/api/v1/entrant" name="register-form" id="register-participants">
+                        <div class="modal-content">
+                            <div class="modal-header flex-column flex-fill">
+                                <div class="modal-border"></div>
+                                <button type="button" class="btn-close close" data-dismiss="modal"
+                                    aria-label="Close"></button>
+                                <h2 class="modal-title" id="registerModalToggleLabel">Questionnaire of the program
+                                    participant</h2>
+                            </div>
+                            <div class="modal-body ">
+                                <div class="form-floating mb-4">
+                                    <div class="input-wrapper">
+                                        <input type="text"
+                                            class="input-name form-control form-control-lg input_participant"
+                                            placeholder="Name*" required id="name">
+                                        <p class="error-text"></p>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <div class="input-wrapper">
+                                        <input type="text"
+                                            class=" input-surname form-control form-control-lg input_participant"
+                                            placeholder="Surname*" required id="surname">
+                                        <p class="error-text"></p>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <div class="input-wrapper">
+                                        <input type="email"
+                                            class="input-email form-control form-control-lg input_participant"
+                                            placeholder="Email*" required id="email">
+                                        <p class="error-text"></p>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <div class="input-wrapper">
+                                        <input type="tel"
+                                            class="phone-number form-control form-control-lg input_participant"
+                                            placeholder="Mobile phone*" required id='phone'>
+                                        <p class="error-text"></p>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-4 text-truncate input-wrapper">
+                                    <input type="text" class="form-control form-control-lg input_participant"
+                                        placeholder="Місто/село, країна теперішнього тимчасового проживання"
+                                        name="place" id="current-city">
+                                    <label for="current-city">City/village, country of current temporary
+                                        residence</label>
+                                    <div class="error-text"></div>
+                                </div>
+                                <div class="form-floating mb-4 text-truncate input-wrapper">
+                                    <input type="text" class="form-control form-control-lg input_participant"
+                                        placeholder="Місто/село, країна теперішнього тимчасового проживання"
+                                        name="place" id="current-city-2">
+                                    <label for="current-city">City/village in Ukraine where you plan to return</label>
+                                    <div class="error-text"></div>
+                                </div>
+                                <div class="info-form_point">
+                                    <label class="information_point" for="inform">Where did you get information about
+                                        us?</label>
+                                    <textarea class="form-control textarea_parners" rows="5" id="information"
+                                        name="inform"></textarea>
+                                    <h2 class="direction_point">Preferred field of study</h2>
+
+                                    <ul class="flex-inner_point">
+                                        <li>
+                                            <input type="checkbox" class="check form-check-input cchl">
+                                            <label class="text-check_point" for="first">Automated testing</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="check form-check-input cchl">
+                                            <label class="text-check_point" for="second">Project Management (PM)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="check form-check-input cchl">
+                                            <label class="text-check_point" for="third">HR & TA (human resources and
+                                                talent acquisition)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="check form-check-input cchl">
+                                            <label class="text-check_point" for="four">School of Hackers for children
+                                                6-16 years old</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="check form-check-input cchl">
+                                            <label class="text-check_point" for="five">English for IT</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="check form-check-input cchl">
+                                            <label class="text-check_point" for="six">System administration</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="check form-check-input cchl">
+                                            <label class="text-check_point" for="seven">Manual testing</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="check form-check-input cchl">
+                                            <label class="text-check_point" for="eight">Web design (UI/UX)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" class="check form-check-input cchl">
+                                            <label class="text-check_point" for="nine">Programming</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="check-form btn btn-primary register-btn" type="submit"
+                                    data-bs-target="#responseModal" data-toggle="modal">Send</button>
+                            </div>
+                        </div>
+                        <input type="hidden" name="organization_id" value="1">
+                    </form>
+                </div>
+            </div>
+            <div class="modal fade" id="responseModal" aria-hidden="true" aria-labelledby="responseModalLabel"
+                tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title fs-5" id="responseModalLabel"></h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="responseMessage"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block2">
+                <div class="conteiner_img">
+                    <div class="img_1">
+                        <img class="img_scopka" src="./src/img/skopka_left.svg" alt="scopka_left">
+                    </div>
+                    <div class="block_title2">
+                        <p class="paragraf_two"><i>We are creating and continually developing a global network of
+                                offline/online
+                                support centers for Ukrainians who have been affected by the consequences
+                                of Russia's war against Ukraine and the Ukrainian people.
+                                Especially for those who have been forced to leave their permanent places of
+                                residence.</i></p>
+                    </div>
+                    <div class="img_2">
+                        <img class="img_scopka" src="./src/img/skopka.svg" alt="scopka_right">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Block_main end good_evening,we_are_from_Ukraine-->
+
+        <!--Block_between the main and we provide start -->
+        <section id="after_the_main">
+
+        </section>
+        <!--Block_between the main and we provide end-->
+
+        <!--Block_3 start  We_provide-->
+        <section id="we_provide">
+            <div class="title">
+                <h2 class="h2">We provide</h2>
+                <div class="flex">
+                    <div class="conteiner">
+                        <div class="icon">
+                            <img class="icon_img" src="./src/img/icon_study.svg" alt="study.svg">
+                        </div>
+                        <div class="border"></div>
+                        <div class="text">
+                            <p class="text_p"> Intensive education in IT specialties for refugees/displaced persons</p>
+                        </div>
+                    </div>
+                    <div class="conteiner">
+                        <div class="icon" id="icon_two">
+                            <img class="icon_img" src="./src/img/icon_work.svg" alt="work.svg">
+                        </div>
+                        <div class="border"></div>
+                        <div class="text">
+                            <p class="text_p"> Individual support for each person until guaranteed employment</p>
+                        </div>
+                    </div>
+                    <div class="conteiner">
+                        <div class="icon" id="icon_three">
+                            <img class="icon_img" src="./src/img/icon_win.svg" alt="win.svg">
+                        </div>
+                        <div class="border"></div>
+                        <div class="text">
+                            <p class="text_p"> Guaranteed return and adaptation to their cities and villages in
+                                Ukraine after our victory</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Block_3 end  We_provide-->
+
+        <!--Block_4 start  Video-->
+        <section id="video">
+            <div class="block">
+                <div class="item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/i2PLl-xm-WY?si=dF7aOu_xIsdJuffp"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!--Block_4 end  Video-->
+
+        <!--Block_5 start  you_have_suffered_from...-->
+        <section id="you_have">
+            <div class="wraper">
+                <div class="main_block">
+                    <div class="text_to_wraper">
+                        <p>If you have been affected by the consequences<br> of the war in Ukraine,<br> please register
+                            to participate
+                            <br>
+                            in the program:
+                        </p>
+                    </div>
+                    <div class="btn">
+                        <button class="button_registration button" type="button" data-bs-target="#registerModalToggle"
+                            data-bs-toggle="modal">Sign up</button>
+                    </div>
+                </div>
+                <div class="img_the_war">
+                    <img src="./src/img/the_war.jpg" alt="Зображення">
+                </div>
+            </div>
+        </section>
+        <!--Block_5 end   you_have_suffered_from...-->
+
+        <!--Block_6 start  we_stand_with_ukraine-->
+        <section id="we_stand">
+            <div class="we_stand">
+                <div class="we_stand_right">
+                    <div class="img_right">
+                        <img class="img_Ukraine" src="./src/img/WeStandUkraine.webp" alt="WeStandUkraine.webp">
+                    </div>
+                    <div class="we_stand_paragraf">
+                        <p class="text_p">We attract financial, material resources, and expertise from countries,
+                            foundations, businesses, individuals from abroad to Ukraine,
+                            both for direct and indirect support of the program,
+                            and thus the Ukrainian army and the Ukrainian people.</p>
+                        <p class="none" id="p_none">The goal is to attract as many resources into Ukraine as possible,
+                            rather than extracting them from it. This will kickstart and revitalize
+                            the Ukrainian economy, create new jobs for Ukrainians,
+                            especially those who have been most affected by Russia's war against Ukraine.
+                            All of this will contribute to the defense,rapid development of Ukraine,
+                            and the personal well-being of every Ukrainian and their families. </p>
+                    </div>
+                </div>
+                <div class="we_stand_left">
+                    <div class="img_left">
+                        <img class="img_Ukraine" src="./src/img/FlagOfUkraine.webp" alt="FlagOfUkraine.webp">
+                    </div>
+                    <div class="we_stand_paragraf">
+                        <p class="text_p">The goal is to attract as many resources into Ukraine as possible,
+                            rather than extracting them from it. This will kickstart and revitalize the Ukrainian
+                            economy,
+                            create new jobs for Ukrainians, especially those who have been most affected
+                            by Russia's war against Ukraine. All of this will contribute to the defense,
+                            rapid development of Ukraine, and the personal well-being of every Ukrainian
+                            and their families. </p>
+                        <p class="none"><span class="word_spacing">We attract financial, material </span>resources,
+                            and expertise from countries,foundations, businesses, individuals from abroad to Ukraine,
+                            both for direct and indirect support of the program, and thus the Ukrainian army and the
+                            Ukrainian people.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="border_block">
+                <div class="border"></div>
+                <div class="block_people">
+                    <div class="people">
+                        <img class="people_img" src="./src/img/IconPeople.webp" alt="IconPeople.webp">
+                    </div>
+                    <div class="paragraf">
+                        <p class="paragraf_people">One mandatory condition for participation
+                            in the program is the return to one's cities and villages
+                            in Ukraine after the Ukrainian people's victory over the Russian aggressors!
+                            We have been, are, and will continue to do everything possible to ensure that
+                            every Ukrainian has the opportunity to return to their homeland!</p>
+                    </div>
+                </div>
+                <div class="border"></div>
+            </div>
+        </section>
+        <!--Block_6 end  we_stand_with_ukraine-->
+
+        <!--Block_7 start  Stop_children-->
+        <section id="stop_children">
+            <div class="img_stop_killing">
+                <img src="./src/img/stop_children.webp" alt="Зображення" />
+            </div>
+            <div class="wraper-discribe">
+                <h2 class="our_partners">Our partners</h2>
+                <div class="flex">
+                    <div class="container-fluid">
+                        <div class="row-4">
+                            <p>
+                                Are you a person or an organization, a foundation willing to help,
+                                a public figure, a politician, a government official, an IT specialist,
+                                a representative of an IT company, an IT Association, or an educational institution?
+                            </p>
+                        </div>
+                        <div class="border_r"></div>
+                        <div class="row-4">
+                            <p>
+                                Do you have expertise in this field,
+                                or do you simply have a strong desire to help?
+                            </p>
+                        </div>
+                        <div class="border_r"></div>
+                        <div class="row-4">
+                            <p>
+                                We call on everyone, wherever you are and whoever cares
+                                about the fate of Ukraine and Ukrainians,
+                                to join as partners in the implementation of the program in Ukraine and abroad!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="button" class="btn btn-primary button_registration" data-bs-toggle="modal"
+                        data-bs-target="#windowPartners" onclick="">Join us</button>
+                </div>
+            </div>
+        </section>
+        <!--Block_7 end  Stop_children-->
+
+        <!--Block_8 start  INTITA_scroll-->
+        <section id="intita_scroll">
+            <div class="row partners">
+                <div class="col-10 scroll-wrapper">
+                    <div id="simple-list-example"
+                        class="d-flex flex-row simple-list-example-scrollspy justify-content-space-between align-items-center">
+                        <a class="p-1 rounded col-6 col-md-3 col-lg-3" href="https://intita.com" target="_blank">
+                            <img src="./src/img/intita_logo.svg" alt="INTITA logo" /></a>
+                        <a class="p-1 rounded col-6 col-md-3 col-lg-3" href="https://robotamolodi.org" target="_blank">
+                            <img src="./src/img/youth_work.svg" alt="Youth work logo" /></a>
+                        <a class="p-1 rounded col-6 col-md-3 col-lg-3" href="https://intita.com" target="_blank">
+                            <img src="./src/img/intita_logo.svg" alt="INTITA logo" /></a>
+                        <a class="p-1 rounded col-6 col-md-3 col-lg-3" href="https://robotamolodi.org" target="_blank">
+                            <img src="./src/img/youth_work.svg" alt="Youth work logo" /></a>
+                        <a class="p-1 rounded col-6 col-md-3 col-lg-3" href="https://intita.com" target="_blank">
+                            <img src="./src/img/intita_logo.svg" alt="INTITA logo" /></a>
+                        <a class="p-1 rounded col-6 col-md-3 col-lg-3" href="https://robotamolodi.org" target="_blank">
+                            <img src="./src/img/youth_work.svg" alt="Youth work logo" /></a>
+                        <a class="p-1 rounded col-6 col-md-3 col-lg-3" href="https://intita.com" target="_blank">
+                            <img src="./src/img/intita_logo.svg" alt="INTITA logo" /></a>
+                        <a class="p-1 rounded col-6 col-md-3 col-lg-3" href="https://robotamolodi.org" target="_blank">
+                            <img src="./src/img/youth_work.svg" alt="Youth work logo" /></a>
+                    </div>
+                </div>
+        </section>
+        <!--Block_8 end  INTITA_scroll-->
+
+        <!--Block_9 start  Specializations-->
+        <section id="specializations">
+            <div class="main-title">
+                <h2>Specializations</h2>
+            </div>
+            <div class="spec-conteiner">
+
+                <div class="block-list">
+                    <div class="title-list">
+                        <h5>Do you dream of becoming great at:</h5>
+                    </div>
+                    <ul class="spec-list">
+                        <li class="item-list">- Programmer</li>
+                        <li class="item-list">- Tester</li>
+                        <li class="item-list">- Web Designer</li>
+                        <li class="item-list">- Project Manager</li>
+                    </ul>
+                    <p class="text-list">This is your chance to <br>change your life! <br> Haitians always have a job!
+                    </p>
+                </div>
+
+                <div class="block-design same-block">
+                    <div class="block-title">
+                        <h5>WEB Design</h5>
+                    </div>
+                    <div class="block-image">
+                        <img src="src/img/specializations/icons-design.png" alt="There is icon design">
+                    </div>
+                    <div class="block-text" style="margin: 0;">
+                        <p>For the creative minds, those with critical thinking who don't just want to create beautiful
+                            images
+                            but make them a part of an attractive, dynamic website!</p>
+                    </div>
+                    <div class="block-button">
+                        <div class="open-button button" onclick="openForm()" type="button"
+                            data-bs-target="#registerModalToggle" data-bs-toggle="modal">Sign up</div>
+                    </div>
+                </div>
+
+                <div class="block-programmer same-block">
+                    <div class="block-title">
+                        <h5>Programming</h5>
+                    </div>
+                    <div class="block-image">
+                        <img src="src/img/specializations/icons-programmer.png" alt="There is icon programmer">
+                    </div>
+                    <div class="block-text">
+                        <p>For those who feel the talent of developing original, interesting,
+                            and full-fledged projects and want to earn well with their intellect honestly!</p>
+                    </div>
+                    <div class="block-button">
+                        <div class="open-button button" onclick="openForm()" type="button"
+                            data-bs-target="#registerModalToggle" data-bs-toggle="modal">Sign up</div>
+                    </div>
+                </div>
+
+                <div class="block-school same-block">
+                    <div class="block-title">
+                        <h5>Hackers`<br>school</h5>
+                    </div>
+                    <div class="block-image">
+                        <img src="src/img/specializations/icons-hackers-school.png" alt="There is icon hackers`school">
+                    </div>
+                    <div class="block-text">
+                        <h5 class="block-title">With guaranteed employment!</h5>
+                        <p>For children aged 6 to 16 years old.</p>
+                    </div>
+                    <div class="block-button">
+                        <div class="open-button button" onclick="openForm()" type="button"
+                            data-bs-target="#registerModalToggle" data-bs-toggle="modal">Sign up</div>
+                    </div>
+                </div>
+
+                <div class="block-testing same-block">
+                    <div class="block-title">
+                        <h5>Testing</h5>
+                    </div>
+                    <div class="block-image">
+                        <img src="src/img/specializations/icons-testing-.png" alt="There is icon testing">
+                    </div>
+                    <div class="block-text">
+                        <p>The work of a tester is similar to that of an investigator or detective:
+                            they follow the 'hot trails' of a programmer and search for errors/bugs.Various deductive
+                            methods and techniques are employed.
+                            If you're an experimenter,this may be for you.</p>
+                    </div>
+                    <div class="block-button">
+                        <div class="open-button button" onclick="openForm()" type="button"
+                            data-bs-target="#registerModalToggle" data-bs-toggle="modal">Sign up</div>
+                    </div>
+                </div>
+
+                <div class="block-manager same-block">
+                    <div class="block-title">
+                        <h5>Project Management</h5>
+                    </div>
+                    <div class="block-image">
+                        <img src="src/img/specializations/icons-manager.png" alt="There is icon project-manager">
+                    </div>
+                    <div class="block-text">
+                        <p>The position of a Project Manager is attractive
+                            because it offers the opportunity to engage in management:
+                            making decisions, organizing the rapid and high-quality creation of a product,
+                            and overseeing productive work within a team.</p>
+                    </div>
+                    <div class="block-button">
+                        <div class="open-button button" onclick="openForm()" type="button"
+                            data-bs-target="#registerModalToggle" data-bs-toggle="modal">Sign up</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Block_9 end  Specializations-->
+
+        <!--footer start-->
+        <footer id="footer">
+            <div class="footer-conteiner">
+
+                <div class="block-left">
+                    <div class="navbar-logo">
+                        <a class="navbar-brand" href="https://intita.com" target="_blank">
+                            <svg width="130" height="50" viewBox="0 0 255 80" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M103.246 0H148.493C151.392 0 153.913 2.36025 153.913 5.34162V74.6584C153.913 77.6396 151.392 80 148.493 80H103.246C100.347 80 97.8261 77.6396 97.8261 74.6584V5.34162C97.8261 2.36025 100.347 0 103.246 0Z"
+                                    fill="#4B75A4" />
+                                <path d="M5.86957 18.2109V66.9914H0V18.2109H5.86957Z" fill="rgb(254, 254, 254)" />
+                                <path
+                                    d="M53.4783 18.2109V66.9914H42.8832L23.3528 24.9307C24.5018 38.8678 24.1187 53.0543 24.1187 66.9914H17.6087V18.2109H27.9482L47.6062 60.3959C46.3299 46.7078 46.968 31.8995 46.968 18.2109H53.4783Z"
+                                    fill="rgb(254, 254, 254)" />
+                                <path
+                                    d="M91.9565 18.2109L90.712 23.4373H78.0168V66.9914H72.4163V23.4373H59.3478L60.3436 18.2109H91.9565Z"
+                                    fill="rgb(254, 254, 254)" />
+                                <path d="M111.522 66.9914V18.2109H105V66.9914H111.522Z" fill="#FEFEFE" />
+                                <path
+                                    d="M150.652 18.2109L149.509 23.4373H136.426V66.9914H130.076V23.4373H116.739L117.882 18.2109H150.652Z"
+                                    fill="#FEFEFE" />
+                                <path
+                                    d="M171.69 44.8411H184.02C182.636 39.8633 180.875 33.7658 177.855 23.313C175.087 33.0192 173.325 39.2415 171.69 44.8411ZM185.656 50.5654H170.18V50.3164C168.796 55.0453 167.412 60.0227 165.399 66.9914H158.479L173.325 18.2109H182.762L197.609 66.9914H190.311C188.172 59.5251 186.914 54.9206 185.656 50.5654Z"
+                                    fill="rgb(254, 254, 254)" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M223.696 17.5605H217.947L198.913 66.9914H204.789L223.696 17.5605Z"
+                                    fill="#4B75A4" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M226.304 59.9077L250.217 44.2467L226.304 26.5973V19.5127L255 41.6368V47.4786L226.304 66.9924V59.9077Z"
+                                    fill="#4B75A4" />
+                            </svg>
+                        </a>
+                        <hr class="separation">
+                        <a class="navbar-brand p-0" href="https://robotamolodi.org" target="_blank">
+                            <img class="youth-work" src="./src/img/footer/youth_work.png" alt="youth work logo">
+                        </a>
+                    </div>
+                    <div class="text-left">
+                        <p>If you want to financially support the program and help Ukraine, please visit
+                            page: <b><a href="https://www.robotamolodi.org" class="link-text-left"
+                                    target="_blank">https://www.robotamolodi.org/</a></b></p>
+                    </div>
+                </div>
+
+                <div class="block-middle">
+                    <div class="text-middle">
+                        <p>If you have any questions about our program or organization or how you can contact us
+                            help, please contact us!</p>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li><a href="#header" class="menu-link">Main</a></li>
+                            <li><a href="#specializations" class="menu-link">Specializations</a></li>
+                            <li><a href="#stop_children" class="menu-link">Partners</a></li>
+                            <li><a href="#footer" class="menu-link">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="block-right">
+                    <div class="contacts">
+                        <div class="title-contacts">
+                            <h4>Contacts</h4>
+                        </div>
+                        <div class="phone">
+                            <a href="tel:+380674311921" class="phone">067 431 19 21</a>
+                        </div>
+                        <div class="mail">
+                            <a href="mailto:Ita.in.ua@gmail.com" class="mail">Ita.in.ua@gmail.com</a>
+                        </div>
+                    </div>
+                    <nav class="icons">
+                        <ul class="icons-list">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://intita.com" target="_blank">
+                                <li class="icon-facebook_icon footer-icon"></li>
+                            </a>
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://intita.com"
+                                target="_blank">
+                                <li class="icon-linkedin_icon footer-icon"></li>
+                            </a>
+                            <a href="https://t.me/share/url?url=https://intita.com" target="_blank">
+                                <li class="icon-telegram_icon footer-icon"></li>
+                            </a>
+                            <a href="https://twitter.com/intent/tweet?url=https://intita.com" target="_blank">
+                                <li class="icon-twitter_icon footer-icon"></li>
+                            </a>
+                            <a href="viber://forward?text=https://intita.com" target="_blank">
+                                <li class="icon-viber_icon footer-icon"></li>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?text=https://intita.com" target="_blank">
+                                <li class="icon-whatsapp_icon footer-icon"></li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="made-developers">
+                <a href="https://ita.in.ua/" class="icon-academy" target="_blank">
+                    <img src="./src/img/footer/Logo-IT.png" alt="Students logo">
+                </a>
+                <div class="text-develop">
+                    <a href="developer-en.html" target="_blank">Created by students<br>of Vinnytsia IT Academy 2023</a>
+                </div>
+            </div>
+            <div class="good-evening">
+                <p>©2023 Good evening - we are from Ukraine</p>
+            </div>
+            <section id="modal-overlay">
+                <div id="second-window">
+                    <button type="button" id="close-second-window" class="btn-close close" data-dismiss="modal"
+                        aria-label="Close"></button>
+                    <span class="form-name-content"> Thank you! <br>I will call you soon!</span>
+                </div>
+            </section>
+        </footer>
+        <!--footer end-->
+
+        <!-- Block_15 - modal windows Partners start -->
+        <section id="modal-window">
+            <div class="modal fade" id="windowPartners" tabindex="-1" aria-hidden="true" aria-labelledby="modalLable">
+                <div class="modal-dialog container-window">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title title-body" id="modalLable">Questionnaire for Program Partners</h5>
+                        </div>
+                        <div class="modal-body body-window">
+                            <form id="form-window" class="registration-form" method="post" accept-charset="utf-8"
+                                action="https://intita.com/api/v1/entrant">
+                                <div class="input-wrapper">
+                                    <input
+                                        class="input-name col-sm-12 col-form-label form-control form-control-lg input_participant"
+                                        maxlength="30" type="text" name="first_name" placeholder="Name*" value="">
+                                    <p class="error-text"></p>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="text"
+                                        class=" input-surname form-control form-control-lg input_participant"
+                                        placeholder="Surname*" required id="surname">
+                                    <p class="error-text"></p>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input type="email"
+                                        class="input-email form-control form-control-lg input_participant"
+                                        placeholder="Email*" required id="email">
+                                    <p class="error-text"></p>
+                                </div>
+                                <div class="input-wrapper">
+                                    <input class="phone-number col-sm-12 col-form-label form-control form-control-lg"
+                                        type="text" name="phone" placeholder="Phone*" value="">
+                                    <p class="error-text"></p>
+                                </div>
+                                <div class="row mb-3 whatCityUser fild">
+                                    <label for="whatCity" class="col-sm-12 col-form-label">
+                                        <div class="english">Where did you get the information from?
+                                            about
+                                            us?</div>
+                                    </label>
+                                    <div class="fild">
+                                        <div class="english">
+                                            <textarea id="whatCity" type="text" name="City"
+                                                class="col-sm-12 input-form"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3 whatCityUser fild">
+                                    <label for="whatCity" class="col-sm-12 col-form-label">
+                                        <div class="english">What kind of cooperation are you interested in?</div>
+                                    </label>
+                                    <div class="fild">
+                                        <div class="english">
+                                            <textarea id="whatCity" type="text" name="City"
+                                                class="col-sm-12 input-form"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="check-form order-btn col-sm-12 btn btn-primary" type="submit">
+                                    <p>Send</p>
+                                </button>
+                                <input type="hidden" name="organization_id" value="1">
+                            </form>
+                        </div>
+                        <!--close button start-->
+                        <div id="second-window" class="second-window1">
+                            <button type="button" id="overlay" class="redy btn-close close " data-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <!--close button end-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Block_15 - modal windows Partners end-->
+
+        <!-- Fixed scroll button start  -->
+        <div class="container d-flex m-0 p-0 justify-content-end scroll-up">
+            <nav class="navbar-arrow">
+                <a class="navbar-brand p-0 m-0 navbar-brand-custom" href="#header">
+                    <svg width="36" height="50" viewBox=" 0 0 46 60" fill="none" xmlns="https://www.w3/2000/svg">
+                        <path class="hov-1" d="M 25.1213 2.89919 C 23.9497 1.72761 22.0503 1.72761 20.8787 2.89919
+               L 1.7868 21.9911 C 0.615224 23.1626 0.615225 25.0621 1.7868 26.2337 C 2.95837 27.4053 4.85787
+               27.4053 6.02944 26.2337 L 23 9.26315 L 39.9706 26.2337 C 41.1421 27.4053 43.0416 27.4053
+               44.2132 26.2337 C 45.3848 25.0621 45.3848 23.1626 44.2132 21.9911 L 25.1213 2.89919 Z M 26
+               6.02051 L 26 5.02051 L 20 5.02051 L 20 6.02051 L 26 6.02051 Z" fill="rgba(8, 60, 192, 1)"></path>
+                        <path class="hov-2" d="M 24.7678 18.2527 C 23.7915 17.2764 22.2085 17.2764 21.2322 18.2527 L
+               5.32233 34.1626 C 4.34602 35.139 4.34602 36.7219 5.32233 37.6982 C 6.29864 38.6745 7.88156
+               38.6745 8.85787 37.6982 L 23 23.556 L 37.1421 37.6982 C 38.1184 38.6745 39.7014 38.6745 40.6777
+               37.6982 C 41.654 36.7219 41.654 35.139 40.6777 34.1626 L 24.7678 18.2527 Z M 25.5 21.0205 L 25.5
+               20.0205 L 20.5 20.0205 L 20.5 21.0205 L 25.5 21.0205 Z" fill="rgb(52, 201, 235)"></path>
+                        <path class="hov-3" d="M 24.4142 33.6063 C 23.6332 32.8252 22.3668 32.8252 21.5858 33.6063 L
+               8.85787 46.3342 C 8.07682 47.1153 8.07682 48.3816 8.85787 49.1626 C 9.63891 49.9437 10.9052
+               49.9437 11.6863 49.1626 L 23 37.8489 L 34.3137 49.1626 C 35.0948 49.9437 36.3611 49.9437
+               37.1421 49.1626 C 37.9232 48.3816 37.9232 47.1153 37.1421 46.3342 L 24.4142 33.6063 Z M 25
+               36.0205 L 25 35.0205 L 21 35.0205 L 21 36.0205 L 25 36.0205 Z" fill="rgb(170, 229, 242)"></path>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <!-- recaptcha start-->
+    <script type="text/javascript" async=""
+        src="https://www.gstatic.com/recaptcha/releases/gEr-ODersURoIfof1hiDm7R5/recaptcha__ru.js"
+        crossorigin="anonymous"
+        integrity="sha384-TLQJmdPnLiPAQT4yetwoOrytOZ6gFBz1x2lmoy5A/z26Q7wBq8QWOoxzSlcobUUY"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcwRRUaAAAAADavxcmw5ShOEUt1xMBmRAcPf6QP"></script>
+    <script src="./src/js/dobrogo_vechora_dark.js"></script>
+    <!-- recaptcha end-->
+</body>
+
+</html>

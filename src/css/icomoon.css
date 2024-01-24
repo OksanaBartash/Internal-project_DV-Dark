@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../icomoon_fonts/icomoon.eot?gn2t2');
+  src: url('../icomoon_fonts/icomoon.eot?gn2t2#iefix') format('embedded-opentype'),
+    url('../icomoon_fonts/icomoon.ttf?gn2t2') format('truetype'),
+    url('../icomoon_fonts/icomoon.woff?gn2t2') format('woff'),
+    url('../icomoon_fonts/icomoon.svg?gn2t2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook_icon:before {
+  content: "\e900";
+}
+
+.icon-linkedin_icon:before {
+  content: "\e901";
+}
+
+.icon-telegram_icon:before {
+  content: "\e902";
+}
+
+.icon-twitter_icon:before {
+  content: "\e903";
+}
+
+.icon-viber_icon:before {
+  content: "\e904";
+}
+
+.icon-whatsapp_icon:before {
+  content: "\e905";
+}
