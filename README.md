@@ -12,7 +12,8 @@ My contributions to this site include:
     * Page "Developers";
     * English version page the site.
 
-During my work on this project, I utilized HTML and CSS for typesetting, extensively employing flex and bootstrap. 
+During my work on this project, I utilized HTML, CSS for typesetting, (extensively employing flex) and JavaScript. 
+I used Bootstrap library, convert and compress images, and work with Figma, Trello.
 The layout of the blocks is adaptive, ranging from the mobile version to the desktop version, ensuring correct display on tablets with adaptive adjustments for both images and text.
 I connected buttons to links for social networking and sharing links, making them responsive to user actions by adding active and hover states. 
 I also implemented transitions between site pages and used links to connect various blocks for seamless navigation. 
